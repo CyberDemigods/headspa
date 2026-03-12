@@ -1,0 +1,278 @@
+/* ===================================
+   LEGAL PAGES (Privacy Policy, Terms)
+   =================================== */
+
+.legal {
+    padding-top: 120px;
+    padding-bottom: var(--spacing-xl);
+    background-color: var(--color-cream);
+    min-height: 60vh;
+}
+
+.legal__title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+    text-align: center;
+}
+
+.legal__updated {
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.legal__section {
+    margin-bottom: var(--spacing-lg);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legal__section h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-cherry);
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--color-blush);
+}
+
+.legal__section p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.8;
+}
+
+.legal__section ul,
+.legal__section ol {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+    line-height: 1.8;
+}
+
+.legal__section ul {
+    list-style: disc;
+}
+
+.legal__section ol {
+    list-style: decimal;
+}
+
+.legal__section li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.legal__section a {
+    color: var(--color-cherry);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.legal__section a:hover {
+    color: var(--color-cherry-dark);
+}
+
+.legal__back {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer legal links */
+.footer__legal-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.footer__legal-links a {
+    font-size: 0.8125rem;
+    color: var(--color-rose);
+    transition: color var(--transition-fast);
+}
+
+.footer__legal-links a:hover {
+    color: var(--color-white);
+}
+
+/* ===================================
+   COOKIE BANNER
+   =================================== */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-text);
+    color: var(--color-cream);
+    padding: var(--spacing-md);
+    z-index: 5000;
+    transform: translateY(100%);
+    transition: transform var(--transition-base);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cookie-banner.visible {
+    transform: translateY(0);
+}
+
+.cookie-banner__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.cookie-banner__text {
+    flex: 1;
+    min-width: 280px;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-rose);
+}
+
+.cookie-banner__text a {
+    color: var(--color-cream);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.cookie-banner__text a:hover {
+    color: var(--color-white);
+}
+
+.cookie-banner__actions {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-shrink: 0;
+}
+
+.cookie-banner__btn {
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.cookie-banner__btn--accept {
+    background-color: var(--color-cherry);
+    color: var(--color-white);
+}
+
+.cookie-banner__btn--accept:hover {
+    background-color: var(--color-cherry-dark);
+}
+
+.cookie-banner__btn--reject {
+    background-color: transparent;
+    color: var(--color-rose);
+    border: 1px solid var(--color-rose);
+}
+
+.cookie-banner__btn--reject:hover {
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+/* ===================================
+   FORM CONSENT CHECKBOX
+   =================================== */
+
+.form-group--checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.form-group--checkbox input[type="checkbox"] {
+    width: auto;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+    accent-color: var(--color-cherry);
+    cursor: pointer;
+}
+
+.form-group--checkbox label {
+    font-size: 0.8125rem;
+    font-weight: 300;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.form-group--checkbox label a {
+    color: var(--color-cherry);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.form-group--checkbox label a:hover {
+    color: var(--color-cherry-dark);
+}
+
+@media (max-width: 768px) {
+    .legal {
+        padding-top: 90px;
+    }
+
+    .legal__section h2 {
+        font-size: 1.25rem;
+    }
+
+    .cookie-banner {
+        padding: var(--spacing-sm);
+    }
+
+    .cookie-banner__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cookie-banner__actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .cookie-banner__btn {
+        width: 100%;
+    }
+
+    .footer__legal-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer__bottom {
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .legal {
+        padding-top: 80px;
+    }
+
+    .legal__section {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .cookie-banner__text {
+        min-width: unset;
+        font-size: 0.8125rem;
+    }
+}

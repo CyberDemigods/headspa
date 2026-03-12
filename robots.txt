@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /fonts/
+
+Sitemap: https://slowheadspa.pl/sitemap.xml
