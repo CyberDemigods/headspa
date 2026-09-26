@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Nie znaleziono strony | Slow Head Spa Opole</title>
+    <meta name="theme-color" content="#3D3433">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧖</text></svg>" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--color-cream);
+        }
+
+        .notfound {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-lg) 16px;
+            text-align: center;
+        }
+
+        .notfound__code {
+            font-family: var(--font-heading);
+            font-size: clamp(4rem, 18vw, 8rem);
+            line-height: 1;
+            color: var(--color-rose);
+        }
+
+        .notfound__title {
+            margin: var(--spacing-sm) 0;
+            font-family: var(--font-heading);
+            font-size: clamp(1.75rem, 5vw, 2.5rem);
+            font-weight: 400;
+            color: var(--color-text);
+        }
+
+        .notfound__text {
+            max-width: 440px;
+            margin: 0 auto var(--spacing-md);
+            color: var(--color-text-light);
+        }
+
+        .notfound__actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            justify-content: center;
+        }
+
+        .notfound__footer {
+            margin-top: auto;
+            padding: var(--spacing-md) 16px;
+            text-align: center;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-text-light);
+        }
+
+        .notfound__footer a {
+            color: var(--color-cherry);
+        }
+    </style>
+</head>
+<body>
+    <main class="notfound">
+        <div>
+            <p class="notfound__code">404</p>
+            <h1 class="notfound__title">Tej strony tu nie ma</h1>
+            <p class="notfound__text">Mogła zmienić adres albo nigdy nie istnieć. Wróć na stronę główną albo od razu zarezerwuj chwilę relaksu.</p>
+            <div class="notfound__actions">
+                <a href="/" class="btn btn--primary">Strona główna</a>
+                <a href="https://booksy.com/pl-pl/280278_slow-head-spa-opole_inni_12930_opole" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Zarezerwuj wizytę</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="notfound__footer">
+        <p>Forged by <a href="https://cyberdemigods.com" target="_blank" rel="noopener">CyberDemigods</a></p>
+    </footer>
+</body>
+</html>
