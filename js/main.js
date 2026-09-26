@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollEffects();
     initVoucherForm();
     initCookieBanner();
+    initMap();
 });
 
 /* ===================================
@@ -421,6 +422,7 @@ function initCookieBanner() {
         acceptBtn.addEventListener('click', () => {
             localStorage.setItem('cookieConsent', 'accepted');
             banner.classList.remove('visible');
+            loadMap();
         });
     }
 
@@ -430,4 +432,35 @@ function initCookieBanner() {
             banner.classList.remove('visible');
         });
     }
+}
+
+/* ===================================
+   MAP (loaded only after consent)
+   =================================== */
+function loadMap() {
+    const map = document.getElementById('contactMap');
+    if (!map || map.querySelector('iframe')) return;
+
+    const iframe = document.createElement('iframe');
+    iframe.src = map.dataset.src;
+    iframe.title = 'Mapa dojazdu do Slow Head Spa';
+    iframe.width = '100%';
+    iframe.height = '100%';
+    iframe.style.border = '0';
+    iframe.style.minHeight = 'inherit';
+    iframe.loading = 'lazy';
+    iframe.referrerPolicy = 'no-referrer-when-downgrade';
+    iframe.allowFullscreen = true;
+    map.replaceChildren(iframe);
+}
+
+function initMap() {
+    const button = document.getElementById('mapLoad');
+    if (!button) return;
+
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+        loadMap();
+    }
+
+    button.addEventListener('click', loadMap);
 }

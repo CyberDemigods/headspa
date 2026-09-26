@@ -423,11 +423,31 @@ ul {
 
 .services__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+}
+
+.services__extra {
+    max-width: 720px;
+    margin: var(--spacing-lg) auto 0;
+    text-align: center;
+    color: var(--color-text-light);
+}
+
+.services__extra strong {
+    color: var(--color-cherry);
+    font-weight: 500;
+}
+
+.services__extra a {
+    color: var(--color-cherry);
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .service-card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-white);
     box-shadow: var(--shadow-md);
     overflow: hidden;
@@ -456,7 +476,15 @@ ul {
 }
 
 .service-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: var(--spacing-md);
+}
+
+.service-card__content .btn {
+    margin-top: auto;
 }
 
 .service-card__title {
@@ -554,6 +582,18 @@ ul {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
+}
+
+.pricing__table--compact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pricing__note {
+    margin: calc(var(--spacing-sm) * -0.5) 0 var(--spacing-md);
+    font-size: 0.9375rem;
+    font-style: italic;
+    color: var(--color-text-light);
 }
 
 .pricing__item {
@@ -766,6 +806,17 @@ ul {
     color: var(--color-cherry);
 }
 
+.contact__details .contact__hint {
+    margin-top: 4px;
+    font-size: 0.8125rem;
+}
+
+.contact__hint a {
+    color: var(--color-cherry);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .contact__social {
     display: flex;
     gap: var(--spacing-sm);
@@ -804,7 +855,34 @@ ul {
 }
 
 .contact__map iframe {
+    display: block;
     filter: grayscale(20%);
+}
+
+.contact__map-placeholder {
+    height: 100%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    text-align: center;
+    background-color: var(--color-cream-dark);
+}
+
+.contact__map-placeholder p {
+    max-width: 340px;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+.contact__map-placeholder a {
+    font-size: 0.875rem;
+    color: var(--color-cherry);
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 /* ===================================
@@ -995,6 +1073,10 @@ ul {
     }
 
     /* Pricing Mobile */
+    .pricing__table--compact {
+        grid-template-columns: 1fr;
+    }
+
     .pricing__item {
         flex-direction: column;
         align-items: flex-start;
