@@ -38,13 +38,19 @@
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 50.6690,
+            "latitude": 50.669,
             "longitude": 17.9181
         },
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
                 "opens": "09:00",
                 "closes": "20:00"
             }
@@ -59,6 +65,162 @@
         "founder": {
             "@type": "Person",
             "name": "Sonia Florek-Dubik"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Cennik Slow Head Spa",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Head Spa Era",
+                        "description": "1 h 15 min"
+                    },
+                    "price": "200",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Head Spa Jarga",
+                        "description": "1 h 30 min"
+                    },
+                    "price": "300",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Head Spa Daro",
+                        "description": "1 h 45 min"
+                    },
+                    "price": "330",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Head Spa Zargo",
+                        "description": "2 h"
+                    },
+                    "price": "400",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Head Spa Istra",
+                        "description": "2 h 30 min"
+                    },
+                    "price": "500",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Head Spa Jarga dla dwojga",
+                        "description": "1 h 45 min, 2 osoby"
+                    },
+                    "price": "650",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Head Spa Zargo dla dwojga",
+                        "description": "2 h 15 min, 2 osoby"
+                    },
+                    "price": "850",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Head Spa Istra dla dwojga",
+                        "description": "2 h 45 min, 2 osoby"
+                    },
+                    "price": "1050",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Masaż Korugi",
+                        "description": "1 h 30 min"
+                    },
+                    "price": "230",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Pakiet Korugi — 4 zabiegi",
+                        "description": "4 × 1 h 30 min"
+                    },
+                    "price": "800",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Masaż Glow Face",
+                        "description": "1 h"
+                    },
+                    "price": "250",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Masaż transbukalny",
+                        "description": "45 min"
+                    },
+                    "price": "180",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Glow Face + masaż transbukalny",
+                        "description": "1 h 30 min"
+                    },
+                    "price": "390",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Masaż rozluźniający pleców",
+                        "description": "30 min"
+                    },
+                    "price": "100",
+                    "priceCurrency": "PLN"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Masaż rozluźniający pleców",
+                        "description": "50 min"
+                    },
+                    "price": "180",
+                    "priceCurrency": "PLN"
+                }
+            ]
         }
     }
     </script>
@@ -71,6 +233,72 @@
         "name": "Slow Head Spa",
         "alternateName": "Slow Head Spa Opole",
         "url": "https://slowheadspa.pl/"
+    }
+    </script>
+
+    <!-- Structured Data — FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Ile kosztuje head spa w Opolu?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Rytuały head spa w Slow Head Spa kosztują od 200 zł (Era, 1 h 15 min) do 500 zł (Istra, 2 h 30 min). Head spa dla dwojga — od 650 zł za dwie osoby."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ile trwa zabieg head spa?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Od 1 h 15 min do 2 h 30 min, w zależności od rytuału. Przy bardzo długich lub gęstych włosach czas może się nieco wydłużyć."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Czy przed head spa trzeba umyć włosy?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nie. Mycie, pielęgnacja i suszenie włosów są częścią każdego rytuału. Wystarczy, że przyjdziesz kilka minut wcześniej — przed pierwszą wizytą wypełniamy krótką kartę klienta."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Czy head spa jest dla mężczyzn?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tak. Head Spa Daro to rytuał przygotowany z myślą o panach — z masażem twarzy i pielęgnacją, która obejmuje także brodę."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Czym jest masaż transbukalny?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To masaż wykonywany od zewnątrz i od wewnątrz policzków. Rozluźnia mięśnie żwaczy i przynosi ulgę osobom, które zaciskają lub zgrzytają zębami (bruksizm)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jak umówić wizytę?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Przez Booksy (przycisk Zarezerwuj), telefonicznie pod numerem 888 773 993 albo mailowo: headspaopole@gmail.com."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Gdzie znajduje się gabinet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Przy ul. Piastowskiej 2/2 w Opolu, na wyspie Pasiece — kilka minut spacerem od Rynku. Zapraszam od poniedziałku do piątku w godz. 9:00–20:00."
+                }
+            }
+        ]
     }
     </script>
 
@@ -113,8 +341,7 @@
     <header class="hero" id="hero">
         <div class="hero__overlay"></div>
         <div class="hero__content">
-            <p class="hero__subtitle">Pierwsze takie miejsce w Opolu</p>
-            <h1 class="hero__title">Slow Head Spa</h1>
+            <h1 class="hero__title"><span class="hero__subtitle">Pierwsze head spa w Opolu</span>Slow Head Spa</h1>
             <p class="hero__description">Zanurz się w świecie głębokiego relaksu.<br>Profesjonalna terapia skóry głowy, masaże twarzy i ciała.</p>
             <div class="hero__buttons">
                 <a href="https://booksy.com/pl-pl/280278_slow-head-spa-opole_inni_12930_opole" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Zarezerwuj wizytę</a>
@@ -153,7 +380,7 @@
     <!-- Services Section -->
     <section class="services" id="uslugi">
         <div class="container">
-            <h2 class="section__title section__title--center">Usługi</h2>
+            <h2 class="section__title section__title--center">Head spa i masaże w Opolu</h2>
             <p class="section__subtitle">Odkryj nasze zabiegi stworzone z myślą o Twoim relaksie</p>
 
             <div class="services__grid">
@@ -173,7 +400,7 @@
                             <li>Redukcja napięcia i stresu</li>
                             <li>Poprawa kondycji włosów</li>
                         </ul>
-                        <a href="#cennik" class="btn btn--outline">Zobacz cennik</a>
+                        <a href="/rytualy-head-spa" class="btn btn--outline">Poznaj rytuały</a>
                     </div>
                 </div>
 
@@ -193,7 +420,7 @@
                             <li>Redukcja opuchlizny i napięć</li>
                             <li>Rozświetlona, promienna skóra</li>
                         </ul>
-                        <a href="#cennik" class="btn btn--outline">Zobacz cennik</a>
+                        <a href="/glow-face-opole" class="btn btn--outline">Więcej o Glow Face</a>
                     </div>
                 </div>
 
@@ -213,7 +440,7 @@
                             <li>Wygładzenie rysów twarzy</li>
                             <li>Świetny w duecie z Glow Face</li>
                         </ul>
-                        <a href="#cennik" class="btn btn--outline">Zobacz cennik</a>
+                        <a href="/masaz-transbukalny-opole" class="btn btn--outline">Więcej o zabiegu</a>
                     </div>
                 </div>
             </div>
@@ -246,7 +473,7 @@
     <section class="pricing" id="cennik">
         <div class="container">
             <h2 class="section__title section__title--center">Cennik</h2>
-            <p class="section__subtitle">Wybierz zabieg dopasowany do Twoich potrzeb</p>
+            <p class="section__subtitle">Aktualne ceny zabiegów w Slow Head Spa Opole</p>
 
             <!-- Head Spa -->
             <div class="pricing__category">
@@ -288,6 +515,7 @@
                         <div class="pricing__price">500 zł</div>
                     </div>
                 </div>
+                <a href="/rytualy-head-spa" class="service__more">Co zawiera każdy rytuał? Zobacz szczegóły →</a>
             </div>
 
             <!-- Head Spa dla dwojga -->
@@ -317,6 +545,7 @@
                         <div class="pricing__price">1050 zł</div>
                     </div>
                 </div>
+                <a href="/head-spa-dla-dwojga" class="service__more">Więcej o rytuale dla dwojga →</a>
             </div>
 
             <!-- Masaże twarzy -->
@@ -359,6 +588,7 @@
                         <div class="pricing__price">390 zł</div>
                     </div>
                 </div>
+                <a href="/glow-face-opole" class="service__more">Glow Face, Korugi i masaż transbukalny — szczegóły →</a>
             </div>
 
             <!-- Masaż pleców -->
@@ -480,11 +710,49 @@
         </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section__title section__title--center">Najczęstsze pytania</h2>
+            <p class="section__subtitle">Head spa w Opolu — wszystko, co warto wiedzieć przed pierwszą wizytą</p>
+            <div class="faq">
+                <details class="faq__item">
+                    <summary>Ile kosztuje head spa w Opolu?</summary>
+                    <p>Rytuały head spa w Slow Head Spa kosztują od 200 zł (Era, 1 h 15 min) do 500 zł (Istra, 2 h 30 min). Head spa dla dwojga — od 650 zł za dwie osoby. <a href="/rytualy-head-spa">Porównaj rytuały</a>.</p>
+                </details>
+                <details class="faq__item">
+                    <summary>Ile trwa zabieg head spa?</summary>
+                    <p>Od 1 h 15 min do 2 h 30 min, w zależności od rytuału. Przy bardzo długich lub gęstych włosach czas może się nieco wydłużyć.</p>
+                </details>
+                <details class="faq__item">
+                    <summary>Czy przed head spa trzeba umyć włosy?</summary>
+                    <p>Nie. Mycie, pielęgnacja i suszenie włosów są częścią każdego rytuału. Wystarczy, że przyjdziesz kilka minut wcześniej — przed pierwszą wizytą wypełniamy krótką kartę klienta.</p>
+                </details>
+                <details class="faq__item">
+                    <summary>Czy head spa jest dla mężczyzn?</summary>
+                    <p>Tak. Head Spa Daro to rytuał przygotowany z myślą o panach — z masażem twarzy i pielęgnacją, która obejmuje także brodę.</p>
+                </details>
+                <details class="faq__item">
+                    <summary>Czym jest masaż transbukalny?</summary>
+                    <p>To masaż wykonywany od zewnątrz i od wewnątrz policzków. Rozluźnia mięśnie żwaczy i przynosi ulgę osobom, które zaciskają lub zgrzytają zębami (bruksizm). <a href="/masaz-transbukalny-opole">Więcej o masażu transbukalnym</a>.</p>
+                </details>
+                <details class="faq__item">
+                    <summary>Jak umówić wizytę?</summary>
+                    <p>Przez Booksy (przycisk Zarezerwuj), telefonicznie pod numerem 888 773 993 albo mailowo: headspaopole@gmail.com.</p>
+                </details>
+                <details class="faq__item">
+                    <summary>Gdzie znajduje się gabinet?</summary>
+                    <p>Przy ul. Piastowskiej 2/2 w Opolu, na wyspie Pasiece — kilka minut spacerem od Rynku. Zapraszam od poniedziałku do piątku w godz. 9:00–20:00.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="contact" id="kontakt">
         <div class="container">
             <h2 class="section__title section__title--center">Kontakt</h2>
-            <p class="section__subtitle">Zapraszam do Slow Head Spa</p>
+            <p class="section__subtitle">Zapraszam do gabinetu przy ul. Piastowskiej 2/2 — w centrum Opola, na wyspie Pasiece</p>
 
             <div class="contact__grid">
                 <div class="contact__info">

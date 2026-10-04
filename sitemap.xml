@@ -2,9 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://slowheadspa.pl/</loc>
-        <lastmod>2026-09-26</lastmod>
+        <lastmod>2026-10-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://slowheadspa.pl/rytualy-head-spa</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://slowheadspa.pl/masaz-transbukalny-opole</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://slowheadspa.pl/glow-face-opole</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://slowheadspa.pl/head-spa-dla-dwojga</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://slowheadspa.pl/blog/</loc>
